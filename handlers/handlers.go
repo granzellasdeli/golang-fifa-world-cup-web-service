@@ -32,7 +32,7 @@ func ListWinners(res http.ResponseWriter, req *http.Request) {
 			res.WriteHeader(http.StatusBadRequest)
 			return
 		}
-		res.Write(winners)
+		res.Write(filteredWinners)
 	}
 }
 
